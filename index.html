@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dependencies/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="dependencies/css/flaticon.css" rel="stylesheet">
+    <link href="dependencies/meanmenu/css/meanmenu.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+</head>
+<body class="sticky-header">
+<a class="scrollup" data-type="section-switch" href="#wrapper">
+    <i class="fas fa-angle-double-up"></i>
+</a>
+<div id="preloader"></div>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+        <div class="header-menu menu-layout1 pd-x-20" id="header-menu">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-2">
+                        <div class="logo-area">
+                            <img alt="loder" src="media/loder.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex justify-content-end">
+                        <nav class="template-main-menu" id="dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#">Browse</a>
+                                </li>
+                                <li>
+                                    <a href="#">Staff Picks</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gifts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sell</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-end">
+                        <div class="header-action-layout1">
+                            <ul>
+                                <li class="header-login-icon">
+                                    <a class="color-light" data-placement="top" data-toggle="tooltip" href="#"
+                                       title="Login/Register">
+                                        <i class="far fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="header-login-icon" style="margin-right: 2rem;">
+                                    <a class="color-light" data-placement="top" data-toggle="tooltip" href="#"
+                                       title="shopping cart">
+                                        <span class="flaticon-shopping-cart"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-banner-wrap-layout1 bg-dark-overlay bg-common minus-mgt-90">
+        <div class="container">
+            <div class="main-banner-box-layout1 animated-headline">
+                <div class="item-subtitle">
+                    <img alt="..." src="media/banner/banner1.png">
+                </div>
+                <div class="search-box-layout1">
+                    <form action="#">
+                        <div class="row no-gutters">
+                            <div class="col-lg-10 form-group">
+                                <div class="input-search-btn search-keyword">
+                                    <i class="fas fa-tags"></i>
+                                    <input class="form-control" name="keyword" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-2 form-group">
+                                <button class="submit-btn" id="searchBtn" type="submit"><i class="fas fa-search"></i>Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding-top-heading bg-accent">
+        <div class="container">
+            <div class="heading-layout1">
+                <p class="left-text"><a href="#">Bestsellers</a></p>
+                <p class="right-text"><a href="javascript:void(0)" onclick="seeAll()">See All</a></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-box-layout1  box-show">
+                        <div class="item-img" onclick="bookDetail('Fairy Tale')">
+                            <img alt="blog" src="media/blog/blog1.png">
+                        </div>
+                        <div class="item-content">
+                            <p><a href="javascript:void(0)" onclick="bookDetail('Fairy Tale')"
+                                  style="color: black;"><span class="post-title">Fairy Tale,</span>by
+                                Stephen King</a></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="box-info">
+                                <div class="priceInfo">
+                                    <div class="item-price">
+                                        <span class="currency-symbol">$</span>
+                                        32.50
+                                    </div>
+                                </div>
+                                <div class="iconInfo">
+                                    <div class="item-icon" style="color: tomato;font-size: 2rem;margin-right: 0.5rem;">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                    <div class="item-icon" onclick="heartClick(this)"
+                                         style="color: white; font-size: 2rem; margin-right: 0.5rem;">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box-layout1 box-show">
+                        <div class="item-img" onclick="bookDetail('Sacred Nature')">
+                            <img alt="blog" src="media/blog/blog2.png">
+                        </div>
+                        <div class="item-content">
+                            <p><a href="javascript:void(0)" onclick="bookDetail('Sacred Nature')" style="color: black;"><span
+                                    class="post-title">Sacred Nature,</span>by Karen Armstrong</a></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="box-info">
+                                <div class="priceInfo">
+                                    <div class="item-price">
+                                        <span class="currency-symbol">$</span>
+                                        28.00
+                                    </div>
+                                </div>
+                                <div class="iconInfo">
+                                    <div class="item-icon" style="color: tomato;font-size: 2rem;margin-right: 0.5rem;">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                    <div class="item-icon" id="heart"
+                                         onclick="heartClick(this)"
+                                         style="color: white; font-size: 2rem; margin-right: 0.5rem;">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box-layout1 box-show">
+                        <div class="item-img" onclick="bookDetail('Our Missing Hearts')">
+                            <img alt="blog" src="media/blog/blog3.png">
+                        </div>
+                        <div class="item-content">
+                            <p><a href="javascript:void(0)" onclick="bookDetail('Our Missing Hearts')"
+                                  style="color: black;"><span class="post-title">Our Missing Hearts,</span>by
+                                Karen Armstrong</a></p>
+                            <p><span aria-hidden="true" class="glyphicon glyphicon-search"></span></p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="box-info">
+                                <div class="priceInfo">
+                                    <div class="item-price">
+                                        <span class="currency-symbol">$</span>
+                                        29.00
+                                    </div>
+                                </div>
+                                <div class="iconInfo">
+                                    <div class="item-icon" style="color: tomato;font-size: 2rem;margin-right: 0.5rem;">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
+                                    <div class="item-icon" onclick="heartClick(this)"
+                                         style="color: white; font-size: 2rem; margin-right: 0.5rem;">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+</div>
+<script src="dependencies/jquery/js/jquery.min.js"></script>
+<script src="dependencies/popper.js/js/popper.min.js"></script>
+<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+<script src="dependencies/jquery-animated-headlines/js/jquery.animatedheadline.min.js"></script>
+<script src="dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>
